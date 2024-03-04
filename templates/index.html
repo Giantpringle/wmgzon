@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WMGZON Sports & Leisure</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <nav id="menu-icon">☰</nav>
+        <h1><img src="{{ url_for('static', filename='logo.png') }}" alt="WMGZON Logo"> Sports & Leisure</h1>
+        <!-- Search Box Added Below -->
+        <input type="text" id="searchBox" oninput="searchProducts()" placeholder="Search products..." aria-label="Search products">
+        <div id="basket-icon">🛒 <span id="item-count">0</span></div>
+    </header>
+    <main>
+        <section id="product-grid">
+            <div class="product-section">
+                <div class="product-card orange">
+                    <h2>Recommended for You</h2>
+                    <img src="{{ url_for('static', filename='squat-rack.jpg') }}" alt="Squat Rack">
+                    <a href="#" class="explore-button">Explore Products</a>
+                </div>
+            </div>
+            <div class="product-section">
+                <div class="product-card">
+                    <h2>Athletic Gear and Equipment</h2>
+                    <img src="{{ url_for('static', filename='football-boots.jpg') }}" alt="Football Boots">
+                    <a href="#" class="explore-button">Explore Products</a>
+                </div>
+            </div>
+            <div class="product-section">
+                <div class="product-card">
+                    <h2>Outdoor Activities</h2>
+                    <img src="{{ url_for('static', filename='fishing-rod.jpg') }}" alt="Fishing Rod">
+                    <a href="#" class="explore-button">Explore Products</a>
+                </div>
+            </div>
+            <div class="product-section">
+                <div class="product-card">
+                    <h2>Fitness and Wellness</h2>
+                    <img src="{{ url_for('static', filename='treadmill.jpg') }}" alt="Treadmill">
+                    <a href="#" class="explore-button">Explore Products</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 WMGZON Sports & Leisure. All rights reserved.</p>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
